@@ -1,0 +1,158 @@
+main {
+  display: flex;
+  background: transparent;
+
+  justify-content: center;
+  align-items: center;
+  max-height: 90vh;
+}
+.hidden {
+  display: none;
+}
+.page {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.radio-player {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #1005b2, #9404f3);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 80vw;
+  min-height: 60vh;
+  margin: 0 auto;
+  flex: 0 1 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: inherit;
+}
+.player-controls {
+  display: flex;
+  max-width: 100%;
+  justify-content: center; /* Center horizontally */
+  margin-top: auto; /*  push to bottom */
+  gap: 1rem; /*  cleaner spacing */
+}
+.material-icons {
+  font-size: 20vh;
+  margin: 5px; /* Add some spacing between icons */
+  color: white;
+}
+
+#station-title,
+#greeting {
+  font-size: 8vh;
+  color: white;
+}
+
+.station-info {
+  margin-bottom: 20px;
+  padding-top: 100px;
+}
+@media (max-width: 1024px) {
+  .radio-player {
+    width: 95vw;
+    height: 70vh;
+    padding: 0px;
+    margin: 0 auto;
+  }
+  .material-icons {
+    font-size: 15vh;
+    max-width: 100%;
+    justify-content: center; /* Center horizontally */
+
+    margin-top: auto; /* Push to the bottom */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #station-title {
+    font-size: 5vh;
+  }
+}
+@media (max-width: 768px) {
+  .radio-player {
+    width: 95vw;
+    height: 60vh;
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
+  .material-icons {
+    font-size: 10vh;
+    max-width: 100%;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: auto; /* Push to the bottom */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #station-title {
+    font-size: 4vh;
+  }
+}
+@media (max-width: 480px) {
+  .radio-player {
+    width: 95vw;
+    height: 50vh;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .material-icons {
+    font-size: 8vh;
+    max-width: 100%;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: auto; /* Push to the bottom */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #station-title {
+    font-size: 3vh;
+  }
+}
+@media (min-width: 1024px) {
+  .player-controls {
+    gap: 2rem; /* More spacing on larger screens */
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: auto; /* Push to the bottom */
+
+  }
+  .radio-player {
+	width: 60vw;
+	height: 70vh;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+header {
+  color: black;
+  padding-top: 5vh;
+  text-align: center;
+  width: 100%;
+  font-size: 1rem;
+  margin-bottom: auto;
+}
+footer {
+  color: black;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: auto;
+}
