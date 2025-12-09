@@ -41,7 +41,10 @@ ________________________________________
 -	Predictable navigation: simplified control model reduces cognitive load and improves discoverability.
 ________________________________________
 ## Future Enhancements
--	Add subtle depth (shadows, elevation) once layout is finalized.
+-   Add hover tooltips displaying concise descriptions/labels for UI components
+-   Use `title` attribute for basic tooltips or custom CSS/JS for styled overlays with 200ms delay
+-   Onclick feedback system (visual state changes, confirmation messages, or micro-interactions)	
+-   Add subtle depth (shadows, elevation) once layout is finalized.
 -	Improve station metadata handling and display richer information.
 -	Introduce micro-interactions for control feedback.
 -	Add fallback messaging and graceful handling for offline or unavailable streams.
